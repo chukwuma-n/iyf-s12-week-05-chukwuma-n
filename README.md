@@ -50,7 +50,9 @@ This is my IYF Season 12, Week 5 DOM Manipulation project. It includes an intera
 
 ## Live Demo
 
-Add your GitHub Pages URL here after publishing the project.
+## Live Demo
+
+[View my Week 5 To-Do List website](https://chukwuma-n.github.io/iyf-s12-week-05-chukwuma-n/)
 
 ## What I Learned
 
