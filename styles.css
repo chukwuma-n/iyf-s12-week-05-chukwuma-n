@@ -1,0 +1,185 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page heading */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+/* To-Do app container */
+#todo-app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#todo-app h2 {
+    margin-top: 0;
+}
+
+/* Task input form */
+#todo-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#todo-form label {
+    width: 100%;
+    font-weight: bold;
+}
+
+#todo-input {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Items remaining */
+#items-left {
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Filter buttons */
+#todo-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+#todo-filters button {
+    background-color: #e5e7eb;
+    color: #222;
+}
+
+#todo-filters button:hover {
+    background-color: #d1d5db;
+}
+
+/* Task list */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#todo-list li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#todo-list .delete-task {
+    background-color: #dc2626;
+}
+
+#todo-list .delete-task:hover {
+    background-color: #b91c1c;
+}
+
+/* Clear completed button */
+#clear-completed {
+    margin-top: 20px;
+    background-color: #4b5563;
+}
+
+#clear-completed:hover {
+    background-color: #374151;
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #todo-app {
+        padding: 16px;
+    }
+
+    #todo-form button {
+        width: 100%;
+    }
+}
+
+
+/* Default filter button appearance */
+#todo-filters button {
+    background-color: #e5e7eb;
+    color: #222222;
+    border: 2px solid transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Blue colour for the selected filter */
+#todo-filters button.active-filter {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border-color: #1d4ed8;
+    font-weight: bold;
+}
+
+/* Hover effect */
+#todo-filters button:hover {
+    background-color: #d1d5db;
+    color: #222222;
+}
+
+#todo-filters button.active-filter:hover {
+    background-color: #1d4ed8 !important;
+    color: #ffffff !important;
+}
